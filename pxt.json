@@ -1,6 +1,6 @@
 {
     "name": "Bootooth",
-    "version": "10.5.973",
+    "version": "3.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
