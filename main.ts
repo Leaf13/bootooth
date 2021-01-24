@@ -1,4 +1,5 @@
 bluetooth.onBluetoothConnected(function () {
+    soundExpression.happy.play()
     images.createImage(`
         . . . . .
         . . . . .
@@ -222,10 +223,15 @@ bluetooth.onBluetoothConnected(function () {
         basic.pause(1)
     }
     basic.pause(1000)
+    for (let index = 0; index < 255; index++) {
+        led.setBrightness(led.brightness() - 1)
+        basic.pause(1)
+    }
     basic.clearScreen()
     soundExpression.hello.play()
 })
 input.onButtonPressed(Button.A, function () {
+    soundExpression.happy.play()
     images.createImage(`
         . . . . .
         . . . . .
@@ -449,9 +455,14 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1)
     }
     basic.pause(1000)
+    for (let index = 0; index < 255; index++) {
+        led.setBrightness(led.brightness() - 1)
+        basic.pause(1)
+    }
     basic.clearScreen()
 })
 input.onButtonPressed(Button.AB, function () {
+    soundExpression.happy.play()
     images.createImage(`
         . . . . .
         . . . . .
@@ -675,9 +686,14 @@ input.onButtonPressed(Button.AB, function () {
         basic.pause(1)
     }
     basic.pause(1000)
+    for (let index = 0; index < 255; index++) {
+        led.setBrightness(led.brightness() - 1)
+        basic.pause(1)
+    }
     basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
+    soundExpression.happy.play()
     images.createImage(`
         . . . . .
         . . . . .
@@ -901,6 +917,10 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(1)
     }
     basic.pause(1000)
+    for (let index = 0; index < 255; index++) {
+        led.setBrightness(led.brightness() - 1)
+        basic.pause(1)
+    }
     basic.clearScreen()
 })
 bluetooth.startAccelerometerService()
